@@ -10,10 +10,12 @@
         <img src="img/logo-header.png" width="220" height="47" alt="Логотип интернет-магазина строительных материалов
           и инструментов для ремонта Техномарт">
       </a>
-      <span>Поиск</span>
-      <!--Здесь будет форма -->
-      <a href="#">Закладки</a>
-      <a href="#">Корзина</a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="submit">Поиск</button>
+        <input type="search" name="search" placeholder="Поиск">
+      </form>
+      <a href="#">Закладки:0</a>
+      <a href="#">Корзина:0</a>
       <a href="#">Оформить заказ</a>
       <p>Интернет-магазин
         строительных материалов
@@ -34,7 +36,7 @@
     </header>
     <main>
       <section>
-        <h2>Товары и услуги</h2>
+        <h2 class="visually-hidden">Товары и услуги</h2>
         <div>
           <p>Материалы</p>
           <a href="#">На любой вкус</a>
@@ -48,6 +50,7 @@
           <a href="#">Для стройки</a>
         </div>
         <div>
+          <p>Скидка 50&&percnt;</p>
           <a href="#">На 350 товаров</a>
         </div>
         <div>
@@ -56,6 +59,7 @@
         </div>
       </section>
       <section>
+        <h2 class="visually-hidden">Слайдер</h2>
         <div>
           <p>Перфораторы <span>настоящие мужские игрушки</span></p>
           <img src="img/slider-1.jpg" width="620" height="266" alt="Изображение мужчины с перфоратором">
@@ -145,7 +149,7 @@
         <a href="#"><img src="img/dewalt.png" width="146" height="44" alt="Бренд производителя DeWalt"></a>
         <a href="#"><img src="img/interskol.png" width="200" height="88" alt="Бренд производителя Интерскол"></a>
         <a href="#"><img src="img/hitachi.png" width="169" height="31" alt="Бренд производителя Hitachi"></a>
-        <a href="#"><img src="img/Lg.png" width="121" height="73" alt="Бренд производителя LG"></a>
+        <a href="#"><img src="img/lg.png" width="121" height="73" alt="Бренд производителя LG"></a>
         <a href="#"><img src="img/aeg.png" width="151" height="96" alt="Бренд производителя AEG"></a>
         <a href="#"><img src="img/metabo.png" width="204" height="69" alt="Бренд производителя Metabo"></a>
       </section>
@@ -201,7 +205,7 @@
         <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <a href="#">
-          <img src="img/map-1.png" width="300" height="158" alt="Карта офиса по адресу улица Большая Конюшенная, дом 19">
+          <img src="img/map-1.png" width="300" height="158" alt="Карта офиса по адресу ул. Большая Конюшенная, 19/8, г.Санкт-Петербург">
         </a>
         <a href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -240,5 +244,39 @@
         </p>
       </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-2.png" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button>
+    </section>
+    <section><!--Для неавторизованного посетитеоя -->
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="appointment-name">Ваше имя:</label><br>
+          <input id="appointment-name" type="text" name="name"  placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="email">Ваш email:</label><br>
+          <input id="email" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="comment-field">Текст письма:</label><br>
+          <textarea name="comment" id="comment-field" rows="3">В свободной форме</textarea>
+        </div>
+        <button type="submit">Отправить</button>
+        <button type="button">Закрыть</button>
+      </form>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2><!--Для авторизованного посетитеоя -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="visitor-name">Ваше имя</label><br>
+        <input id="visitor-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

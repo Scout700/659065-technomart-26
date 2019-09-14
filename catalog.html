@@ -10,8 +10,10 @@
         <img src="img/logo-header.png" width="220" height="47" alt="Логотип интернет-магазина строительных материалов
           и инструментов для ремонта Техномарт">
       </a>
-      <span>Поиск</span>
-      <!--Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button  type="submit">Поиск</button>
+        <input type="search" name="search" placeholder="Поиск">
+      </form>
       <a href="#">Закладки</a>
       <a href="#">Корзина</a>
       <a href="#">Оформить заказ</a>
@@ -35,24 +37,84 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Раздел: перфораторы</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Инструмент</a></li>
+        <li><a href="#">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
-      <h1>Перфораторы</h1>
+      <h2>Перфораторы</h2>
       <section>
-        <p>Фильтр</p>
-        <!-- Здесь будет форма -->
-      </section>
-      <section>
-        <p>Сортировка</p>
+        <h3>Сортировка</h3>
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По функционалу</a>
-        <a href="#">По возрастанию</a><!-- Возможно кнопка -->
-        <a href="#">По убыванию</a><!-- Возможно кнопка -->
+        <a href="#">По возрастанию</a>
+        <a href="#">По убыванию</a>
+      </section>
+      <section>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h3>Фильтр</h3>
+          <div>
+            <label for="price">Ценв:</label><br>
+            <input type="range" id="price" name="price" min="0" max="35000" step="1">
+            <span>0</span>-<span>30000</span>
+          </div>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">
+                  bosch
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">
+                  interscol
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">
+                  makita
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">
+                  dewalt
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">
+                  hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power-group" value="battery-power" id="filter-battery" checked>
+                <label for="filter-battery">
+                  Аккумуляторные
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="power-group" value="mains-supply" id="filter-mains">
+                <label for="filter-mains">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <ul>
@@ -233,7 +295,7 @@
       </ul>
       <div class="footer-bottom">
         <p>© 2010–2019 Компания «Техномарт»<br>
-           Все права защищены</p>
+          Все права защищены</p>
         <ul>
           <li><a href="#">Вконтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
@@ -245,5 +307,12 @@
         </p>
       </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Добавление товара в корзину</h2>
+      <p>Товар добавлен в корзину</p>
+      <a href="#">Оформить заказ</a>
+      <a href="#">Продолжить покупки</a>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
