@@ -3,34 +3,39 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="index.html">
-      <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
-    </a>
-    <form action="https://echo.htmlacademy.ru" method="get">
-      <button type="submit">Поиск</button>
-      <input id="search-field" type="search"  name="search" placeholder="Поиск">
-    </form>
-    <a href="#">Закладки</a>
-    <a href="#">Корзина</a>
-    <a href="#">Оформить заказ</a>
-    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-    <a href="tel:+78125550555">+7 (812) 555-05-55)</a>
-    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <div class="header-top">
+      <a class="header-logo" href="index.html">
+        <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
+      </a>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <button type="submit">Поиск</button>
+        <input id="search-field" type="search" name="search" placeholder="Поиск">
+      </form>
+      <a href="#">Закладки: 0</a>
+      <a href="#">Корзина: 0</a>
+      <a class="formalize" href="#">Оформить заказ</a>
+    </div>
+    <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55)</a>
+    <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <a href="#">Равшвн Джамшутович</a>
     <a href="#">Выход</a>
     <a href="#">Мои заказы</a>
     <a href="#">Личный кабинет</a>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="#">Компания</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="#">Новости</a>
-      <a href="#">Спецпредложения</a>
-      <a href="#">Доставка</a>
-      <a href="#">Контакты</a>
+    <nav class="nav">
+      <a class="nav-item" href="index.html">Главная</a>
+      <a class="nav-item" href="#">Компания</a>
+      <a class="nav-item" href="catalog.html">Каталог</a>
+      <a class="nav-item" href="#">Новости</a>
+      <a class="nav-item" href="#">Спецпредложения</a>
+      <a class="nav-item" href="#">Доставка</a>
+      <a class="nav-item" href="#">Контакты</a>
     </nav>
   </header>
   <main>
@@ -41,7 +46,7 @@
       <li><a href="#">Инструмент</a></li>
       <li>Перфораторы</li>
     </ul>
-    <h2>Перфораторы</h2>
+    <h2 class="title">Перфораторы</h2>
     <section>
       <h3>Сортировка</h3>
       <a href="#">По цене</a>
@@ -260,7 +265,7 @@
       </ul>
     </section>
     <section>
-      <h2>Пара слов о перфораторах</h2>
+      <h2 class="title  about-us">Пара слов о перфораторах</h2>
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для  сверления и долбления отверстий в кирпиче, бетоне и   камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и  ударная дрель.
@@ -306,7 +311,7 @@
     </div>
   </footer>
   <section>
-    <h2>Товар добавлен в корзину</h2>
+    <h2 class="title added-to-cart">Товар добавлен в корзину</h2>
     <button type="button">Закрыть</button>
     <a href="#">Оформить заказ</a>
     <button type="button">Продолжить покупки</button>

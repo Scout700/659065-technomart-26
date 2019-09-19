@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #f2f6f8;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-logo {
+  background-color: #ee3643;
+  border-bottom: #b52933;
+}
+
+.nav {
+  border-bottom: solid #293449;
+  background-color: #32425c;
+}
+
+.nav-item {
+  color: #ffffff;
+}
+
+.nav-item:hover {
+  background-color: #293449;
+}
+
+.nav-item:active {
+  background-color: #1d2739;
+}
+
+.header-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-adress {
+  color: #32425c;
+}
+
+.login-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.login-link:hover {
+  color: #f37f85;
+}
+
+.login-link:active {
+  color: #cacaca;
+}
+
+.header-top a {
+  font-size: 17px;
+  line-height: 18px;
+ color: #ffffff;
+}
+
+.header-top a:hover {
+  background-color: #212a3a;
+}
+
+.header-top a:active {
+  color: #a2a4a6;
+  background-color: #161d29;
+}
+
+.header-tel {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
+.formalize {
+  background-color: #63a63e;
+}
+
+.formalize:hover {
+  background-color: #5fbb2d;
+}
+
+.formalize:hover {
+  color: #b0c4a7;
+  background-color: #518534;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.about-us {
+  color: #000000;
+}
+
+.added-to-cart {
+  text-transform: none;
+  color: #000000;
+}
+
+.service {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo-item {
+  width: ;
+  height: ;
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+
+.technique {
+  background-color: #dc91d8;
+}
+
+.discount {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.promo-item p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.slider .btn:hover {
+  background-color: #ca2c37;
+}
+
+.slider .btn:active {
+  background-color: #ba2732;
+}
+
+.promo-item .btn {
+  background-color: rgba(229, 229, 229, 0.9);
+}
+
+.service-container .btn  {
+  background-color: #ff5357;
+}
+
+.promo-item a:hover {
+  background-color: rgba(204, 204, 204, 0.8);
+}
+
+.promo-item a:active {
+  background-color: rgba(178, 178, 178, 0.7);
+}
+
+.popular-container {
+  background-color: #ffffff;
+}
+
+.popular-header {
+  background-color: #f9f5f0;
+}
+
+.service-container {
+  background-color: #f3f7f8;
+}
+
+.service-container p {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: #000000;
+}
+
+.button-service {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.button-service:hover {
+  background-color: #293449;
+}
+
+.button-service:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
