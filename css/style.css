@@ -435,7 +435,7 @@ input[type="search"]:focus {
 .sort a {
   text-decoration: underline;
   text-decoration-color: #ee3643;
-  text-decoration-style: dashed;
+  text-decoration-style: dotted;
   opacity: 0.3;
 }
 
