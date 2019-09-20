@@ -1,7 +1,44 @@
-body {
-  margin: 0;
-  padding: 0;
+@font-face{
+font-family: "Cuprum";
+src: url(/fonts/web/cuprum.woff) format("woff"),
+url(/fonts/web/cuprum.woff2) format("woff2");
+font-weight: normal;
+font-style: normal;
+}
 
+@font-face{
+font-family: "Cuprum";
+src: url(/fonts/web/cuprumbold.woff) format("woff"),
+url(/fonts/web/cuprum.woff2) format("woff2");
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face{
+font-family: "Cuprum";
+src: url(/fonts/web/cuprum.woff) format("woff"),
+url(/fonts/web/cuprum.woff2) format("woff2");
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face{
+font-family: "PT Sans";
+src: url(/fonts/web/ptsana.woff) format("woff"),
+url(/fonts/web/ptsans.woff2) format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: "PT Sans";
+src: url(/fonts/web/ptsana.woff) format("woff"),
+url(/fonts/web/ptsans.woff2) format("woff2");
+font-weight: bold;
+font-style: normal;
+}
+
+body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -19,7 +56,7 @@ img {
   max-width: 100%;
 }
 
-header {
+.page-header {
   background-color: #f2f6f8;
 }
 
@@ -27,32 +64,47 @@ header {
   background-color: #293449;
 }
 
-.header-logo {
+.logo {
   background-color: #ee3643;
-  border-bottom: #b52933;
+  border-bottom:  solid #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  border-bottom: solid #9a212a;
+}
+
+.logo:active {
+  background-color: #ba2732;
+  border-bottom: solid #8e1e26;
 }
 
 .nav {
-  border-bottom: solid #293449;
-  background-color: #32425c;
+/*зададим размеры навигационного меню*/
 }
 
 .nav-item {
   color: #ffffff;
+
+  background-color: #32425c;
+  border-bottom: solid #293449;
 }
 
 .nav-item:hover {
   background-color: #293449;
+  border-bottom: none;
 }
 
 .nav-item:active {
+  color: rgba(255, 255, 255, 0.5);
+
   background-color: #1d2739;
 }
 
 .header-description {
+  font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  font-style: italic;
   color: #ee3643;
 }
 
@@ -60,10 +112,17 @@ header {
   color: #32425c;
 }
 
+.header-tel {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
 .login-link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+
   background-color: #ffffff;
 }
 .login-link:hover {
@@ -71,13 +130,49 @@ header {
 }
 
 .login-link:active {
-  color: #cacaca;
+  color: #000000;
+
+  opacity: 0.3;
+}
+.icon-login,
+.user-name,
+.user-name:hover {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-name:active {
+  opacity: 0.3;
+}
+
+.icon-login {
+  /*Обнулим размер шрифта, позиционируем, вставим иконку*/
+}
+
+.order-account {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.order-account:hover {
+  color: #ee5962;
+}
+
+.order-account:active {
+  color: #32425c;
+
+  opacity: 0.3;
 }
 
 .header-top a {
   font-size: 17px;
   line-height: 18px;
- color: #ffffff;
+  color: #ffffff;
 }
 
 .header-top a:hover {
@@ -85,14 +180,8 @@ header {
 }
 
 .header-top a:active {
-  color: #a2a4a6;
   background-color: #161d29;
-}
-
-.header-tel {
-  font-size: 21px;
-  line-height: 21px;
-  color: #e9292a;
+  opacity:0.6;
 }
 
 .formalize {
@@ -103,15 +192,50 @@ header {
   background-color: #5fbb2d;
 }
 
-.formalize:hover {
-  color: #b0c4a7;
+.formalize:active {
   background-color: #518534;
+  opacity: 0.5;
+}
+
+.search {
+  font: inherit;
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+
+input[type="search"] {
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  border: none;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+button .search:hover,
+input[type="search"]:hover {
+  color: #ffffff;
+
+  background-color: #212a3a;
+}
+
+button .search:focus,
+input[type="search"]:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .title {
   font-size: 30px;
   line-height: 30px;
-
   text-transform: uppercase;
   color: #32425c;
 }
@@ -131,8 +255,8 @@ header {
 }
 
 .promo-item {
-  width: ;
-  height: ;
+/*  width: ;
+  height: ;*/
 }
 
 .materials {
@@ -165,9 +289,10 @@ header {
 .btn {
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
-
   text-transform: uppercase;
+
   background-color: #ee3643;
 }
 
@@ -185,14 +310,15 @@ header {
 
 .service-container .btn  {
   background-color: #ff5357;
+  opacity: 0.1;
 }
 
-.promo-item a:hover {
-  background-color: rgba(204, 204, 204, 0.8);
+.promo-item .btn:hover {
+  opacity: 0.2;
 }
 
-.promo-item a:active {
-  background-color: rgba(178, 178, 178, 0.7);
+.promo-item .btn:active {
+  opacity: 0.3;
 }
 
 .popular-container {
@@ -208,11 +334,10 @@ header {
 }
 
 .service-container p {
-  font-family: "PT Sana", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: bold;
-
   color: #000000;
 }
 
@@ -220,6 +345,7 @@ header {
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
+
   background-color: #32425c;
 }
 
@@ -229,5 +355,214 @@ header {
 
 .button-service:active {
   color: #32425c;
+
   background-color: #ffffff;
+}
+
+.catalog-items{
+  list-style: none;
+}
+
+.in-basket {
+  background-color: #63a63e;
+  border-bottom: solid #367315;
+}
+
+.in-basket:hover {
+  background-color: #5fbb2d;
+}
+
+.in-basket:active {
+  background-color: #518534;
+}
+
+.in-mark {
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: solid #63a63e;
+}
+
+.in-mark:hover {
+  border: solid #32425c;
+}
+
+.in-mark:active {
+  opacity: 0.3;
+  border: solid;
+}
+
+.product-item .product-title {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.product-price {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #bababa;
+}
+
+.breadcrumbs {
+  list-style:none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort {
+  background-color: #f7f3ec;
+}
+
+.filter-title,
+.sort a {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.sort a {
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  text-decoration-style: dashed;
+  opacity: 0.3;
+}
+
+.sort a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  opacity: 1;
+}
+
+.sort a:active {
+  color: #ee3643;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.filter-container {
+  font-family: "PT Sana", Arial, sans-serif;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-option {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-btn {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.catalog-header {
+  background-color: #f2f6f8;
+}
+
+.catalog-article {
+  background-color: #f2f6f8;
+}
+
+.catalog-article p {
+  font-family: "PT Sana", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.page-footer {
+  font-size: 18px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.page-footer ul {
+  list-style: none;
+}
+
+.footer-service a{
+  color: #ffffff;
+}
+
+.footer-service a:hover {
+  color: #f1f5f7;
+  text-decoration: underline;
+}
+
+.footer-service a:active {
+  opacity: 0.5;
+}
+
+.footer-promo a{
+  color: #ffd180;
+}
+
+.footer-promo a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.footer-promo a:active {
+  opacity: 0.5;
+}
+
+.footer-copyrite {
+  background-color: #293449;
+}
+
+.footer-copyrite p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-btn {
+  background-color: #212a3a;
+}
+
+.social-btn:hover,
+.social-btn:active {
+  background-color: #ee3643;
+}
+
+.footer-copyrite a {
+  color: #e0b976;
+}
+
+.footer-copyrite a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyrite a:active {
+  color: #e53643;
+  text-decoration: none;
 }
