@@ -298,6 +298,8 @@ input[type="search"]:focus {
 }
 
 .btn {
+  width: 253px;
+  height: 38px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -307,11 +309,11 @@ input[type="search"]:focus {
   background-color: #ee3643;
 }
 
-.slider .btn:hover {
+.btn:hover {
   background-color: #ca2c37;
 }
 
-.slider .btn:active {
+.btn:active {
   background-color: #ba2732;
 }
 
@@ -336,7 +338,7 @@ input[type="search"]:focus {
   background-color: #ffffff;
 }
 
-.popular-header {
+.popular-header-wrap {
   background-color: #f9f5f0;
 }
 
@@ -420,6 +422,8 @@ input[type="search"]:focus {
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   list-style:none;
 }
 
@@ -672,4 +676,8 @@ body {
 .slider {
   width: 620px;
   height: 266px;
+}
+
+.popular-header {
+  display: flex;
 }
