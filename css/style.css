@@ -1,41 +1,41 @@
 @font-face{
-font-family: "Cuprum";
-src: url(/fonts/web/cuprum.woff) format("woff"),
-url(/fonts/web/cuprum.woff2) format("woff2");
-font-weight: normal;
-font-style: normal;
+  font-family: "Cuprum";
+  src: url(../fonts/cuprum.woff2) format("woff2"),
+  url(../fonts/cuprum.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face{
-font-family: "Cuprum";
-src: url(/fonts/web/cuprumbold.woff) format("woff"),
-url(/fonts/web/cuprum.woff2) format("woff2");
-font-weight: bold;
-font-style: normal;
+  font-family: "Cuprum";
+  src: url(../fonts/cuprumbold.woff2) format("woff2"),
+  url(../fonts/cuprumbold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face{
-font-family: "Cuprum";
-src: url(/fonts/web/cuprum.woff) format("woff"),
-url(/fonts/web/cuprum.woff2) format("woff2");
-font-weight: normal;
-font-style: italic;
+  font-family: "Cuprum";
+  src: url(../fonts/cuprumitalic.woff2) format("woff2"),
+  url(../fonts/cuprumitalic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face{
-font-family: "PT Sans";
-src: url(/fonts/web/ptsana.woff) format("woff"),
-url(/fonts/web/ptsans.woff2) format("woff2");
-font-weight: normal;
-font-style: normal;
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff2) format("woff2"),
+  url(../fonts/ptsana.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face{
-font-family: "PT Sans";
-src: url(/fonts/web/ptsana.woff) format("woff"),
-url(/fonts/web/ptsans.woff2) format("woff2");
-font-weight: bold;
-font-style: normal;
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansbold.woff2) format("woff2"),
+  url(../fonts/ptsanabold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -81,7 +81,7 @@ img {
 
 .nav {
 
-/*зададим размеры навигационного меню*/
+  /*зададим размеры навигационного меню*/
 }
 
 .nav-item {
@@ -266,7 +266,7 @@ input[type="search"]:focus {
 }
 
 .promo-item {
-/*  width: ;
+  /*  width: ;
   height: ;*/
 }
 
@@ -569,15 +569,15 @@ input[type="search"]:focus {
   background-color: #ee3643;
 }
 
-.footer-copyrite a {
+.footer-copirite a {
   color: #e0b976;
 }
 
-.footer-copyrite a:hover {
+.footer-copirite a:hover {
   text-decoration: underline;
 }
 
-.footer-copyrite a:active {
+.footer-copirite a:active {
   color: #e53643;
   text-decoration: none;
 }
