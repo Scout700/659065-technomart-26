@@ -80,10 +80,12 @@ img {
 }
 
 .nav {
+
 /*зададим размеры навигационного меню*/
 }
 
 .nav-item {
+  text-align: center;
   color: #ffffff;
 
   background-color: #32425c;
@@ -125,6 +127,7 @@ img {
 
   background-color: #ffffff;
 }
+
 .login-link:hover {
   color: #f37f85;
 }
@@ -134,6 +137,7 @@ img {
 
   opacity: 0.3;
 }
+
 .icon-login,
 .user-name,
 .user-name:hover {
@@ -170,6 +174,7 @@ img {
 }
 
 .header-top a {
+  width: 150px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -185,6 +190,7 @@ img {
 }
 
 .formalize {
+  width: 150px;
   background-color: #63a63e;
 }
 
@@ -206,6 +212,7 @@ img {
 
 input[type="search"] {
   font: inherit;
+  width: 225px;
   font-size: 17px;
   line-height: 18px;
   text-align: left;
@@ -217,6 +224,10 @@ input[type="search"] {
 
 input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
+}
+
+button .search {
+  width: 45px;
 }
 
 button .search:hover,
@@ -565,4 +576,65 @@ input[type="search"]:focus {
 .footer-copyrite a:active {
   color: #e53643;
   text-decoration: none;
+}
+/*сеточные стили*/
+
+body {
+  min-width: 1280px;
+  min-height: 3150px;
+}
+
+.page-header {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width:  100%;
+  min-height: 320px;
+}
+
+.header-top {
+  /*Контейнер для полосы наверху*/
+  display: flex;
+  justify-content: center;
+  width:  100%;
+  min-height: 42px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content:space-around;
+  width:  940px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  /*Обертка для двух блоков на голубой полосе*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-middle {
+  display: flex;
+  width: 940px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  min-height: 60px;
+}
+
+.header-column {
+  min-height: 155px;
+  width: 300px;
+  flex-grow: 1;
+}
+
+.nav-item {
+  flex-grow: 1;
+}
+
+.header-logo {
+
 }
