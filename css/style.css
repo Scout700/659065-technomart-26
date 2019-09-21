@@ -577,6 +577,15 @@ input[type="search"]:focus {
   color: #e53643;
   text-decoration: none;
 }
+
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
 /*сеточные стили*/
 
 body {
@@ -596,7 +605,7 @@ body {
   display: flex;
   justify-content: center;
   width:  100%;
-  min-height: 42px;
+  min-height: 42px; /*Вместо минимально высоты мы будем задавать паддинги?*/
 }
 
 .header-inner {
@@ -637,4 +646,30 @@ body {
 
 .header-logo {
 
+}
+
+.main-container {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width:  940px;
+  min-height: 2385px;
+}
+
+.promo {
+  margin-bottom: 55px;
+}
+
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  width: 300px;
+  min-height: 123px;
+}
+
+.slider {
+  width: 620px;
+  height: 266px;
 }
