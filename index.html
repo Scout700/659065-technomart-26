@@ -83,13 +83,13 @@
             <label for="btn-2"></label>
           </div>
           <div>
-            <h3>Перфораторы</h3>
-            <h4>настоящие мужские игрушки</h4>
+            <h3 class="slider-title">Перфораторы</h3>
+            <h4 class="slider-caption">настоящие мужские игрушки</h4>
             <a class="btn red-btn" href="catalog.html">Открыть каталог</a>
           </div>
           <div>
-            <h3>Дрели</h3>
-            <h4>соседям на радость</h4>
+            <h3 class="slider-title">Дрели</h3>
+            <h4 class="slider-caption">соседям на радость</h4>
             <a class="btn red-btn" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
@@ -242,7 +242,7 @@
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="about-us-list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -291,7 +291,6 @@
       </div>
       <div class="footer-copirite">
         <div class="container">
-
           <p>
             © 2010–2019 Компания «Техномарт»<br>
             Все права защищены
@@ -319,30 +318,27 @@
     <button type="button">Закрыть</button>
   </section>
 
-
   <section class="modal"><!--Для неавторизованного посетитеоя -->
     <h2 class="visually-hidden">Напишите нам</h2>
     <button type="button">Закрыть</button>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="modal-name">
-        <label for="appointment-name">Ваше имя:</label>
-        <input  id="appointment-name" type="text" name="name"  placeholder="Имя Фамилия">
+    <form  class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+       <div class="feedback-form-group">
+        <label for="fullname">Ваше имя:</label>
+        <input  id="fullname" type="text" name="name"  placeholder="Имя Фамилия">
       </div>
-      <div class="modal-name">
+       <div class="feedback-form-group">
         <label for="email">Ваш email:</label>
         <input id="email" type="email" name="email" placeholder="email@example.com">
       </div>
-      <div class="text-field">
-        <label for="comment-field">Текст письма:</label>
-        <textarea  id="comment-field" name="comment" rows="3" placeholder="В свободной форме"></textarea>
+      <div class="feedback-form-group">
+        <label for="message">Текст письма:</label>
+        <textarea  id="message" name="message" rows="3" placeholder="В свободной форме"></textarea>
       </div>
-      <div class="button-wrapper">
+       <div class="button-field">
         <button class="btn red-btn" type="submit">Отправить</button>
       </div>
     </form>
   </section>
-
-
 
   <section>
     <h2 class="visually-hidden">Напишите нам</h2><!--Для авторизованного посетитеоя -->

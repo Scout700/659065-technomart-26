@@ -47,13 +47,26 @@ html {
 }
 
 body {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -62,6 +75,39 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
+
+.page-header,
+.page-footer  {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width:  100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  min-height: 320px; /*временно*/
+  background-color: #f2f6f8;
+}
+
+.inner-page {
+  min-height: 2250px;
 }
 
 .logo {
@@ -109,6 +155,8 @@ img {
 }
 
 .header-address {
+  font-size: 14px;
+  line-height: 24px;
   color: #32425c;
 }
 
@@ -162,14 +210,10 @@ img {
 
 .order-account:active {
   color: #32425c;
-
   opacity: 0.3;
 }
 
 .site-navigation a {
-  width: 150px;
-  font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 }
 
@@ -247,18 +291,9 @@ img {
   color: #32425c;
 }
 
-.about-us {
-  color: #000000;
-}
-
 .added-to-cart {
   text-transform: none;
   color: #000000;
-}
-
-.service {
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .materials {
@@ -281,6 +316,18 @@ img {
   background-color: #ffc047;
 }
 
+.slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider-caption {
+  font-size: 18px;
+}
+
 .promo-item p {
   font-weight: bold;
   font-size: 24px;
@@ -288,10 +335,30 @@ img {
   color: #ffffff;
 }
 
+.product-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.product-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #bababa;
+}
+
+/*.product-price b {
+  color: #ffffff;*/
+
 .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   width: 253px;
   height: 38px;
-  line-height: 18px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -354,16 +421,17 @@ img {
   background-color: rgba(178, 178, 178, 0.7);
 }
 
+.title.service {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .service-container {
   background-color: #f3f7f8;
 }
 
 .service-container p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
   font-weight: bold;
-  color: #000000;
 }
 
 .credit-desk.btn  {
@@ -371,6 +439,7 @@ img {
 }
 
 .button-service { /*Кнопка переключения в слайдере "Сервисы"*/
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
@@ -386,20 +455,14 @@ img {
   background-color: #ffffff;
 }
 
-.product-title {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
+.about-us {
   color: #000000;
 }
 
-.product-price {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #bababa;
+.about-us-list {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .breadcrumbs a {
@@ -414,19 +477,17 @@ img {
   background-color: #f7f3ec;
 }
 
-.filter-title {
-  margin: 0;
-  padding: 0;
-
-}
 .filter-title,
 .sort a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
   color: #000000;
   text-transform: uppercase;
 }
+
 .sort a {
   text-decoration: underline;
   text-decoration-color: #ee3643;
@@ -455,9 +516,10 @@ img {
 }
 
 .filter legend {
-  font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .filter ul {
@@ -467,17 +529,25 @@ img {
 .filter-option {
   font-size: 15px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .filter-btn {
   font-size: 13px;
   line-height: 18px;
+  width: 140px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
 
   border: solid #e5e5e5;
   background-color: #ffffff;
+}
+
+.paginator a{
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .catalog-header {
@@ -489,22 +559,25 @@ img {
 }
 
 .catalog-article p {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .page-footer {
   font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
   background-color: #32425c;
 }
 
-.logo .footer-logo {
+.footer-logo {
   height: 68px;
   margin-bottom: 0;
 }
+
 .footer-copirite {
+  font-size: 16px;
+  line-height: 18px;
   background-color: #293449;
 }
 
@@ -538,13 +611,6 @@ img {
   opacity: 0.5;
 }
 
-
-
-.footer-copyrite p {
-  font-size: 16px;
-  line-height: 18px;
-}
-
 .social-btn {
   background-color: #212a3a;
 }
@@ -567,12 +633,8 @@ img {
   text-decoration: none;
 }
 
-.visually-hidden {
-  visibility: hidden;
-  font-size: 0;
-  margin: 0;
-  padding: 0;
-}
+
+
 
 
 /*сеточные стили*/
@@ -582,13 +644,6 @@ body {
   min-height: 3150px;
 }
 
-.page-header {
-  width:  100%;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  min-height: 320px; /*временно*/
-  background-color: #f2f6f8;
-}
 
 .header-wrapper {
   display: flex;
@@ -649,6 +704,7 @@ body {
 
 .promo {
   display: flex;
+  font-family: "Cuprum", Arial, sans-serif;
   min-height: 410px;
   margin-bottom: 55px;
 }
@@ -657,7 +713,6 @@ body {
 .promo-item {
   width: 300px;
   min-height: 123px;
-
 }
 
 .slider {
@@ -760,9 +815,6 @@ body {
 }
 
 /*Разметка каталога*/
-.inner-page {
-  min-height: 2250px;
-}
 
 .inner-page .page-header {
   margin-bottom: 20px;
@@ -995,18 +1047,13 @@ body {
   border-top: 7px solid #ff5357;
 }
 
-.modal-name {
+.feedback-form-group {
   width: 220px;
-  height: 68px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.text-field {
-  width: 460px;
-  height: 150px;
-  margin: 0 auto;
-}
-
-.button-wrapper {
+.button-field {
   height: 112px;
   background-color: #f4f4f4;
 }
