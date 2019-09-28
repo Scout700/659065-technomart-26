@@ -158,8 +158,22 @@ body {
 }
 
 .search-form {
+  position: relative;
   margin: 0;
 }
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .search-field[type="search"] {
   width: 265px;
@@ -938,8 +952,8 @@ body {
 }
 
 .hitachi {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 56px;
+  padding-bottom: 48px;
 }
 
 .lg {
@@ -953,8 +967,8 @@ body {
 }
 
 .metabo {
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding-top: 36px;
+  padding-bottom: 40px;
 }
 
 .brand-container a:hover {
@@ -983,10 +997,10 @@ body {
 }
 
 .button-service { /*Кнопка переключения в слайдере "Сервисы"*/
-font-family: "Cuprum", Arial, sans-serif;
-font-size: 21px;
-color: #ffffff;
-background-color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #32425c;
 }
 
 .button-service:hover {
