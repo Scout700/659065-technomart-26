@@ -488,7 +488,6 @@ body {
   align-content: space-between;
   width: 620px;
   margin-right: 20px;
-
 }
 
 .promo-second {
@@ -507,7 +506,6 @@ body {
   padding-top: 24px;
   padding-bottom: 22px;
   padding-left: 23px;
-
 }
 
 .promo-item p {
@@ -900,7 +898,6 @@ body {
   margin-right: 0;
 }
 
-
 .popular-container {
   margin-bottom: 85px;
 }
@@ -969,11 +966,6 @@ body {
   box-shadow: 0 3px 10px 3px #a9a9a9;
 }
 
-
-
-
-
-
 .service-container {
   display: flex;
   width: 100%;
@@ -984,7 +976,6 @@ body {
 .service-container .container{
   display: flex;
   flex-direction: column;
-
 }
 
 .credit-desk .red-btn {
@@ -1006,10 +997,6 @@ background-color: #32425c;
   color: #32425c;
   background-color: #ffffff;
 }
-
-
-
-
 
 .container-about-us .container {
   display: flex;
@@ -1093,13 +1080,6 @@ background-color: #32425c;
   width: 300px;
 }
 
-
-
-
-
-
-
-
 .breadcrumbs a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1171,7 +1151,6 @@ background-color: #32425c;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-
   border: solid #e5e5e5;
   background-color: #ffffff;
 }
@@ -1183,9 +1162,6 @@ background-color: #32425c;
 .catalog-article {
   background-color: #f2f6f8;
 }
-
-
-
 /*Разметка каталога*/
 
 .inner-page .page-header {
@@ -1284,7 +1260,6 @@ background-color: #32425c;
   width: 100%;
   min-height: 260px;
   background-color: #f2f6f8;
-
 }
 
 .inner-page .page-footer {
