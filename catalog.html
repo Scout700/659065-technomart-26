@@ -10,11 +10,14 @@
   <header class="page-header">
     <div class="inner-top">
       <div class="container">
-        <a class="logo header-logo" href="index.html">
+        <a class="logo header-logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-field" type="search" name="search" placeholder="Поиск:">
+
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-field" id="icon-search" type="search" name="search" placeholder="Поиск:">
+          <label class="search-label" for="icon-search"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></label>
+
         </form>
         <a class="markbook-basket markbook" href="#">Закладки: 0</a>
         <a class="markbook-basket basket" href="#">Корзина: 0</a>
@@ -24,16 +27,27 @@
     <div class="inner-middle container">
       <p class="header-description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
       <div class="header-contacts">
-        <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55)</a>
+        <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
+
+
+
       <div class="authorise-user-nav">
-        <a class="user-name" href="#">Равшан Джамшутович</a>
-        <a class="icon-login" href="#"><span class="visually-hidden">Выход</span></a>
+        <a class="user-name" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg><span>Равшан Джамшутович</span></a>
+
+        <a class="icon-login" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg><span class="visually-hidden">Выход</span></a>
+
+
+
         <a class="order-account" href="#">Мои заказы</a>
-        <a class="order-account" href="#">Личный кабинет</a>
+        <a class="order-account" href="#"><span class="order-marker"></span>Личный кабинет</a>
       </div>
     </div>
+
+
+
+
     <nav class="nav container">
       <a class="nav-item" href="index.html">Главная</a>
       <a class="nav-item" href="#">Компания</a>
@@ -48,7 +62,7 @@
     <div class="container">
       <h1 class="visually-hidden">Раздел: перфораторы</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="index.html" class="home">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a>Перфораторы</a></li>
@@ -59,74 +73,77 @@
       <div class="catalog-wrapper">
         <section class="filter-container">
           <div  class="title-inner">
-            <h3 class="filter-title">Фильтр</h3>
+            <h3 class="filter-title">Фильтр:</h3>
           </div>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="firstpriceoutput.value=firstprice.value">
-            <fieldset>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
               <legend>Цена:</legend>
-              <div>
-                <span>Ползунок</span>
-              </div>
-              <div>
-                <input type="number" name="minnumber" value="0">
-              </div>
-              <span>&ndash;</span>
-              <div>
-                <input type="number" name="maxnumber" value="30000">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"> <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price"><span class="controls-dash">&ndash;</span><input name="max-price" type="text" value="30000"></label>
+                </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Производители:</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-option">
-                  <input id="filter-bosch" type="checkbox" name="bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-bosch" type="checkbox" name="bosch" checked>
                   <label for="filter-bosch">bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input id="filter-interscol" type="checkbox" name="interscol">
-                  <label for="filter-interscol">interscol</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-interscol" type="checkbox" name="interscol">
+                  <label for="filter-interscol">интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input id="filter-makita" type="checkbox" name="makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-makita" type="checkbox" name="makita" checked>
                   <label for="filter-makita">makita</label>
                 </li>
                 <li class="filter-option">
-                  <input id="filter-dewalt" type="checkbox" name="dewalt">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-dewalt" type="checkbox" name="dewalt">
                   <label for="filter-dewalt">dewalt</label>
                 </li>
                 <li class="filter-option">
-                  <input id="filter-hitachi" type="checkbox" name="hitachi">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="filter-hitachi" type="checkbox" name="hitachi">
                   <label for="filter-hitachi">hitachi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Питание:</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-option">
-                  <input id="filter-battery" type="radio" name="power-group" value="battery-power" checked>
+                  <input class="visually-hidden filter-radio filter-input-radio" id="filter-battery" type="radio" name="power-group" value="battery-power" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input id="filter-mains" type="radio" name="power-group" value="mains-supply">
+                  <input class="visually-hidden filter-radio filter-input-radio" id="filter-mains" type="radio" name="power-group" value="mains-supply">
                   <label for="filter-mains">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="btn filter-btn" type="submit">Показать</button>
+            <button class="filter-btn" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog-inner">
           <section class="sort">
             <div  class="title-inner">
-              <h3 class="filter-title">Сортировка</h3>
+              <h3 class="filter-title">Сортировка:</h3>
             </div>
             <div class="sort-list">
-              <a href="#">По цене</a>
+              <a href="#" class="active">По цене</a>
               <a href="#">По типу</a>
               <a href="#">По функционалу</a>
-              <a href="#">По возрастанию</a>
-              <a href="#">По убыванию</a>
+              <a href="#" class="sort-list-arrow up-dir active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>Вверх</a>
+              <a href="#" class="sort-list-arrow down-dir"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>Вниз</a>
             </div>
           </section>
           <section class="catalog">
@@ -300,12 +317,12 @@
                 </p>
               </li>
             </ul>
-            <ul class="paginator">
-              <li><a>1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a class="next" href="#">Следующая</a></li>
-            </ul>
+            <div class="paginator-list">
+              <a class="paginator-item paginator-item-current">1</a>
+              <a href="#" class="paginator-item">2</a>
+              <a href="#" class="paginator-item">3</a>
+              <a href="#" class="paginator-item next-page">Следующая</a>
+            </div>
           </section>
         </div>
       </div>
@@ -313,7 +330,7 @@
     <div class="catalog-article-wrapper">
       <div class="container">
         <section class="catalog-article">
-          <h2 class="title  about-us">Пара слов о перфораторах</h2>
+          <h2 class="service-title">Пара слов о перфораторах</h2>
           <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для  сверления и долбления отверстий в кирпиче, бетоне и   камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и  ударная дрель.
@@ -322,12 +339,14 @@
       </div>
     </div>
   </main>
+
+
   <footer class="page-footer">
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="container">
           <a class="logo footer-logo" href="index.html">
-            <img src="img/logo-technomart.svg" width="137" height="21" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
+            <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
           </a>
           <ul class="footer-service">
             <li><a href="#">Компания</a></li>
@@ -363,7 +382,9 @@
             <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
             <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
           </ul>
-          <p>Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
+          <p>Обратная связь:
+            <a href="#">mail@htmlacademy.ru</a>
+          </p>
           <p>
             Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </p>
