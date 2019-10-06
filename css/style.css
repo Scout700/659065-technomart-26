@@ -484,7 +484,7 @@ body {
 }
 
 .order-account:last-child {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .order-account:hover {
   color: #ee5962;
@@ -1180,26 +1180,26 @@ body {
 }
 
 .button-service { /*Кнопка переключения в слайдере "Сервисы"*/
-  display: block;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  width: 240px;
-  padding-top: 17px;
-  padding-bottom: 20px;
-  padding-left: 23px;
-  margin-bottom: 1px;
-  box-shadow:
-    inset 0 1px 0 0 #405069,
-     0 1px 0 0 #293449;
-  color: #ffffff;
-  background-color: #32425c;
+display: block;
+font-family: "Cuprum", Arial, sans-serif;
+font-size: 21px;
+font-weight: bold;
+width: 240px;
+padding-top: 17px;
+padding-bottom: 20px;
+padding-left: 23px;
+margin-bottom: 1px;
+box-shadow:
+inset 0 1px 0 0 #405069,
+0 1px 0 0 #293449;
+color: #ffffff;
+background-color: #32425c;
 }
 
 .button-service:hover {
   box-shadow:
-    inset 0  1px 0 0 #405069,
-    0 1px 0 0 #293449;
+  inset 0  1px 0 0 #405069,
+  0 1px 0 0 #293449;
   background-color: #293449;
 }
 
@@ -1256,8 +1256,8 @@ body {
 #credit-desk:checked ~ .service-controls .credit-desk {
   color: #32425c;
   box-shadow:
-    inset 0 1px 0 0 #ffffff,
-    0 1px 0 0 #ffffff;
+  inset 0 1px 0 0 #ffffff,
+  0 1px 0 0 #ffffff;
   background-color: #ffffff;
 }
 
@@ -1687,13 +1687,13 @@ body {
   background-color: #f7f3ec;
 }
 
- .sort-list a {
-   display: block;
-   text-decoration: underline;
-   text-decoration-color: #ee3643;
-   text-decoration-style: dotted;
-   opacity: 0.3;
- }
+.sort-list a {
+  display: block;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
+  opacity: 0.3;
+}
 
 .sort-list .sort-list-arrow {
   position: absolute;
@@ -1991,27 +1991,98 @@ body {
 
 
 /*разметка  попапа*/
-
 .modal {
-  font-family: "Cuprum", Arial, sans-serif;
-
-  width: 620px;
-  height: 430px;
+  color: #000000;
+  position: fixed;
   background-color: #ffffff;
-  border-top: 7px solid #ff5357;
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 200;
+}
+
+.modal-back {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  width: 620px;
+  bottom: 215px;
+  left: 50%;
+  margin-left: -310px;
+  padding-top: 45px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-close {
+  position: absolute;
+  top: 7px;
+  left: 585px;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-back .feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .feedback-form-group {
   width: 220px;
+}
+
+.message {
+  width: 460px;
+  height: 114px;
+  margin-bottom: 37px;
+  padding-top: 13px;
+  padding-left: 16px;
+  border-radius: 3px;
+  border: 2px solid #dee3e4;
+  outline: none;
+}
+
+.fullname,
+.email {
+  width: 220px;
+  margin-top: 10px;
+  margin-bottom: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 16px;
+  border-radius: 3px;
+  border: 2px solid #dee3e4;
+  outline: none;
+}
+
+.fullname::placeholder,
+.email::placeholder,
+.message::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #a9a9a9;
 }
 
 .button-field {
-  height: 112px;
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 37px;
   background-color: #f4f4f4;
 }
-.added-to-cart {
-  text-transform: none;
-  color: #000000;
+
+.button-field .red-btn {
+  width: 460px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
 }
