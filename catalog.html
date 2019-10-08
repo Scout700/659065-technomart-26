@@ -151,7 +151,7 @@
             <ul class="catalog-list">
               <li class="product-item">
                 <div class="actions">
-                  <a class="green-btn" href="#">Купить</a>
+                  <a class="green-btn buy-link" href="#">Купить</a>
                   <a class="green-btn in-mark" href="#">В закладки</a>
                 </div>
                 <a href="#">
@@ -392,11 +392,16 @@
       </div>
     </div>
   </footer>
-  <section>
-    <h2 class="title added-to-cart">Товар добавлен в корзину</h2>
-    <button type="button">Закрыть</button>
-    <a href="#">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
+  <section class="modal category-back">
+    <button class="modal-close" type="button">
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="service-title title-modal">Товар добавлен в корзину</h2>
+    <div class="buttons-back">
+      <a href="#" class="red-btn red-btn-back">Оформить заказ</a>
+      <button type="button" class="red-btn white-btn-back">Продолжить покупки</button>
+    </div>
   </section>
+  <script src="js/popup.js"></script>
 </body>
 </html>

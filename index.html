@@ -238,7 +238,7 @@
 
 
         <ul class="service-list">
-          <li  class="service-item">
+          <li  class="service-item delivery-item">
             <h3 class="title service">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
@@ -246,7 +246,7 @@
               поднимая его на ваш этаж!
             </p>
           </li>
-          <li  class="service-item">
+          <li  class="service-item guarantee-item">
             <h3 class="title service">Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br>
@@ -254,7 +254,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li class="service-item">
+          <li class="service-item credit-item">
             <h3 class="title service">Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
@@ -293,7 +293,7 @@
           <a href="#" class="image-small-map">
             <img class="image" src="img/small-map.jpg" width="300" height="158" alt="Карта офиса по адресу ул. Большая Конюшенная, 19/8, г.Санкт-Петербург">
           </a>
-          <a  href="#" class="red-btn">Заблудились? Напишите нам!</a>
+          <a  href="#" class="red-btn feedback-btn">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -351,10 +351,8 @@
       </div>
     </div>
   </footer>
-
-
-
   <section class="modal modal-back">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <button class="modal-close" type="button">
       <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
     </button>
@@ -365,19 +363,28 @@
           <input class="fullname" id="fullname" type="text" name="name"  placeholder="Имя Фамилия">
         </div>
         <div class="feedback-form-group">
-          <label for="email">Ваш email:</label>
+          <label for="email">Ваш e-mail:</label>
           <input class="email" id="email" type="email" name="email" placeholder="email@example.com">
         </div>
 
-      <div class="feedback-form-group">
-        <label for="message">Текст письма:</label>
-        <textarea class="message" id="message" name="message" rows="3" placeholder="В свободной форме"></textarea>
-      </div>
+        <div class="feedback-form-group">
+          <label for="message">Текст письма:</label>
+          <textarea class="message" id="message" name="message" rows="3" placeholder="В свободной форме"></textarea>
         </div>
-      <div class="button-field">
-        <button class="red-btn" type="submit">Отправить</button>
+      </div>
+      <div class="buttons-back">
+        <button class="red-btn button-form" type="submit">Отправить</button>
       </div>
     </form>
   </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта офиса интернет-магазина "Техномарт"</h2>
+    <button class="modal-close" type="button">
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
+    </button>
+    <div>
+    </div>
+  </section>
+  <script src="js/popupSecond.js"></script>
 </body>
 </html>
