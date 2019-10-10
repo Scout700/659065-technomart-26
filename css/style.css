@@ -1433,11 +1433,12 @@ body {
   padding-right: 100px;
 }
 
-.about-us-right img{
-  margin-bottom: 32px;
-
+.contacts-link-map {
+  display: block;
   width: 300px;
   height: 158px;
+  margin-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .about-us-right .red-btn {
@@ -1505,8 +1506,6 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
-
 
 .catalog-header {
   margin-bottom: 20px;
@@ -1660,6 +1659,7 @@ body {
   background-color: #f7f3ec;
   border: none;
   border-radius: 5px;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1733,16 +1733,6 @@ body {
   opacity: 0.7;
 }
 
-.filter-input-checkbox:hover + label::before,
-.filter-input-checkbox:checked:hover + label::after {
-  opacity: 1;
-}
-
-.filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:checked:disabled + label::after {
-  opacity: 0.3;
-}
-
 .filter-item:nth-child(2) {
   margin-bottom: 23px;
 
@@ -1779,14 +1769,24 @@ body {
   opacity: 0.8;
 }
 
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:checked:hover + label::after,
 .filter-input-radio:hover + label::before,
 .filter-input-radio:checked:hover + label::after {
   opacity: 1;
 }
 
-.filter-input-radio:active + label::before,
-.filter-input-radio:checked:active + label::after {
-  opacity: 0.3;
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label::after,
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after {
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:focus + label::before  {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-item:nth-child(3) {
@@ -1807,8 +1807,8 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .filter-btn:hover {
