@@ -1,4 +1,4 @@
-var link = document.querySelector(".catalog-list .buy-link");
+var link = document.querySelector(".buy-link");
 var popup = document.querySelector(".category-back");
 var close = popup.querySelector(".modal-close");
 

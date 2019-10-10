@@ -561,7 +561,7 @@ body {
   width: 300px;
   margin-right: 20px;
   padding-top: 23px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   padding-left: 23px;
 }
 
@@ -952,7 +952,7 @@ body {
   border: 1px solid #eaeaea;
 }
 
-.popular-product .product-item:nth-of-type(4n+4) {
+.popular-product .product-item:nth-of-type(4n) {
   margin-right: 0;
 }
 
@@ -2231,11 +2231,12 @@ body {
 }
 
 .modal-back {
-  top: 120px;
+  top: 250px;
   left: 50%;
 
   width: 620px;
   margin-left: -310px;
+
   padding-top: 45px;
 
   font-family: "Cuprum", Arial, sans-serif;
@@ -2247,6 +2248,7 @@ body {
 
 .modal-close {
   position: absolute;
+  z-index: 350;
 
   width: 21px;
   height: 21px;
@@ -2375,17 +2377,19 @@ body {
 }
 
 .modal-map {
-  bottom: 215px;
-  left: 20%;
+  top: 50%;
+  left: 50%;
 
   width: 940px;
-  height: 446px;
-  padding-top: 45px;
+  height: 447px;
+  margin-top: -235px;
+  margin-left: -470px;
 
+  background-color: #ffffff;
   background-image: url("../img/full-map.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.45);
 }
 
 .modal-map .modal-close {
@@ -2393,13 +2397,28 @@ body {
   left: 905px;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 300;
+
+  border: none;
+}
+
+.image-map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 250;
+}
+
+
 .category-back {
-  bottom: 215px;
+  top: 300px;
   left: 50%;
 
   width: 620px;
-  margin-left: -310px;
   padding-top: 45px;
+  margin-left: -310px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
