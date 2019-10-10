@@ -1635,15 +1635,20 @@ body {
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
+  margin: 0;
 
-  font-size: 17px;
+  text-align: center;
   vertical-align: top;
 
   text-transform: uppercase;
 }
 
-.price-controls input {
+.price-controls label:first-child {
+  margin-right: 30px;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
   width: 95px;
   padding-top: 9px;
   padding-bottom: 10px;
@@ -1655,12 +1660,17 @@ body {
   background-color: #f7f3ec;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.price-controls span {
+.controls-dash {
+  position: absolute;
+  top: 18px;
+  left: 105px;
+  display: block;
   width: 10px;
-  margin-right: 10px;
-  margin-left: -5px;
+  height: 1px;
+  background-color: #000000;
 }
 
 .filter-list {
