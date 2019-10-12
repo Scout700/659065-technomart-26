@@ -3,13 +3,16 @@ var popupSecond = document.querySelector(".modal-back");
 var close = popupSecond.querySelector(".modal-close");
 var login = popupSecond.querySelector("[name=name]");
 var form = popupSecond.querySelector(".feedback-form");
-var email = popupSecond.querySelector("[name=email]");
-var message = popupSecond.querySelector("[name=message]");
+var emailUser = popupSecond.querySelector("[name=email]");
+var messageUser = popupSecond.querySelector("[name=message]");
+
 var isStorageSupport = true;
-var storage = "";
+var storageLogin = "";
+var storageEmail = "";
 
 try {
-  storage = localStorage.getItem("login");
+  storageLogin = localStorage.getItem("login");
+  storageEmail = localStorage.getItem("emailUser");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -17,9 +20,10 @@ try {
 feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupSecond.classList.add("modal-show");
-  if (storage) {
-    login.value = storage;
-    email.focus();
+  if (storageLogin&&storageEmail) {
+    login.value = storageLogin;
+    emailUser.value = storageEmail;
+    messageUser.focus();
   } else {
     login.focus();
   }
@@ -32,7 +36,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!login.value || !email.value) {
+  if (!login.value || !emailUser.value) {
     evt.preventDefault();
     popupSecond.classList.remove("modal-error");
     popupSecond.offsetWidth = popupSecond.offsetWidth;
@@ -40,10 +44,11 @@ form.addEventListener("submit", function (evt) {
   }  else {
   if (isStorageSupport) {
       localStorage.setItem("login", login.value);
+      localStorage.setItem("emailUser", emailUser.value);
   }
   }
 
-  if (!message.value) {
+  if (!messageUser.value) {
     evt.preventDefault();
     popupSecond.classList.remove("modal-error");
     popupSecond.offsetWidth = popupSecond.offsetWidth;
