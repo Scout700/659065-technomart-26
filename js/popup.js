@@ -1,11 +1,13 @@
-var link = document.querySelector(".buy-link");
+var link = document.querySelectorAll(".buy-link");
 var popup = document.querySelector(".category-back");
 var close = popup.querySelector(".modal-close");
 
-link.addEventListener("click", function (evt) {
-evt.preventDefault();
-popup.classList.add("modal-show");
-});
+for (var i=0; i<link.length; i++ ){
+  link[i].addEventListener("click", function(event){
+    event.preventDefault();
+    popup.classList.add("modal-show");
+  });
+}
 
 close.addEventListener("click", function (evt) {
 evt.preventDefault();
