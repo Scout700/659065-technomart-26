@@ -13,11 +13,9 @@
         <a class="logo header-logo">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина строительных материалов и инструментов для ремонта Техномарт">
         </a>
-
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <input class="search-field" id="icon-search" type="search" name="search" placeholder="Поиск:">
           <label class="search-label" for="icon-search"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></label>
-
         </form>
         <a class="markbook-basket markbook" href="#">Закладки: 0</a>
         <a class="markbook-basket basket" href="#">Корзина: 0</a>
@@ -50,7 +48,7 @@
       <section class="promo">
         <div class="promo-first">
           <h2 class="title visually-hidden">Товары и услуги</h2>
-          <div class="promo-item materials">
+          <div class="promo-item materials new">
             <p>Материалы</p>
             <a class="gray-btn" href="#">На любой вкус</a>
           </div>
@@ -63,46 +61,35 @@
             <a class="btn gray-btn" href="#">Для стройки</a>
           </div>
         </div>
-
-
         <div class="promo-second">
-
           <input class="visually-hidden" type="radio" id="control-1" name="toggle">
           <input class="visually-hidden" type="radio" id="control-2" name="toggle" checked>
-
-
-
-            <div class="slider">
-              <div class="slider-controls">
-                <label for="control-1">Первый</label>
-                <label for="control-2">Второй</label>
-              </div>
-
-              <ul class="slider-list">
-                <li class="slider-item slide" id="slide2">
-                  <h3 class="slider-title">Дрели</h3>
-                  <h4 class="slider-caption">Соседям на радость!</h4>
-                  <div class="button-switch">
-                    <a href="#" class="prev">Назад</a>
-                    <a href="#" class="next">Вперёд</a>
-                  </div>
-                  <a class="red-btn" href="catalog.html">Открыть каталог</a>
-                </li>
-                <li class="slider-item slide" id="slide1">
-                  <h3 class="slider-title">Перфораторы</h3>
-                  <h4 class="slider-caption">Настоящие мужские игрушки</h4>
-                  <div class="button-switch">
-                    <a href="#" class="prev">Назад</a>
-                    <a href="#" class="next">Вперёд</a>
-                  </div>
-                  <a class="red-btn" href="catalog.html">Открыть каталог</a>
-                </li>
-              </ul>
+          <div class="slider">
+            <div class="slider-controls">
+              <label for="control-1">Первый</label>
+              <label for="control-2">Второй</label>
             </div>
-
-
-
-
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide2">
+                <h3 class="slider-title">Дрели</h3>
+                <h4 class="slider-caption">Соседям на радость!</h4>
+                <div class="button-switch">
+                  <a href="#" class="prev">Назад</a>
+                  <a href="#" class="next">Вперёд</a>
+                </div>
+                <a class="red-btn" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slider-item slide" id="slide1">
+                <h3 class="slider-title">Перфораторы</h3>
+                <h4 class="slider-caption">Настоящие мужские игрушки</h4>
+                <div class="button-switch">
+                  <a href="#" class="prev">Назад</a>
+                  <a href="#" class="next">Вперёд</a>
+                </div>
+                <a class="red-btn" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+          </div>
           <div class="promo-3">
             <div class="promo-item discount">
               <p>Скидка 50&percnt;</p>
@@ -114,16 +101,11 @@
             </div>
           </div>
         </div>
-
       </section>
-
-
       <div class="popular-header">
         <h2 class="title">Популярные товары:</h2>
         <a class="red-btn" href="#">Все популярные товары</a>
       </div>
-
-
       <section class="popular-product">
         <ul class="catalog-items">
           <li class="product-item">
@@ -132,7 +114,7 @@
               <a class="green-btn in-mark" href="#">В закладки</a>
             </div>
             <a href="#">
-              <img  class="image" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </a>
             <h3>
               <a class="product-title" href="#">
@@ -150,7 +132,7 @@
               <a class="green-btn in-mark" href="#">В закладки</a>
             </div>
             <a href="#">
-              <img class="image" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
             <h3>
               <a class="product-title" href="#">
@@ -159,7 +141,7 @@
             </h3>
             <p class="product-price">
               <del>22500 р.</del>
-              <b>12500 р.</b>
+              <b>15500 р.</b>
             </p>
           </li>
           <li class="product-item">
@@ -180,7 +162,7 @@
               <b>25500 р.</b>
             </p>
           </li>
-          <li class="product-item product-mark">
+          <li class="product-item new">
             <div class="actions">
               <a class="green-btn buy-link" href="#">Купить</a>
               <a class="green-btn in-mark" href="#">В закладки</a>
@@ -217,7 +199,6 @@
         </div>
       </section>
     </div>
-
     <section class="service-container">
       <div class="container">
         <div  class="service-article">
@@ -235,8 +216,6 @@
           <label class="button-service guarantee-desk" for="guarantee-desk">Гарантия</label>
           <label class="button-service credit-desk" for="credit-desk">Кредит</label>
         </div>
-
-
         <ul class="service-list">
           <li  class="service-item delivery-item">
             <h3 class="title service">Доставка</h3>
@@ -265,10 +244,6 @@
         </ul>
       </div>
     </section>
-
-
-
-
     <section class="container-about-us">
       <div class="container">
         <div class="about-us-left">
@@ -281,9 +256,9 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="about-us-list">
-            <li><div class="menu-icon"><span></span></div>Деловые линии</li>
-            <li><div class="menu-icon"><span></span></div>Автотрейдинг</li>
-            <li><div class="menu-icon"><span></span></div>ЖелДорЭкспедиция</li>
+            <li><span class="menu-icon"></span>Деловые линии</li>
+            <li><span class="menu-icon"></span>Автотрейдинг</li>
+            <li><span class="menu-icon"></span>ЖелДорЭкспедиция</li>
           </ul>
           <a class="red-btn" href="#">Подробнее о компании</a>
         </div>
@@ -343,14 +318,33 @@
             <a href="#">mail@htmlacademy.ru</a>
           </p>
           <p>
-            Разработано —
+            Разработано<span class="copirite-dash"></span>
             <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </p>
-
         </div>
       </div>
     </div>
   </footer>
+  <section class="modal category-back">
+    <button class="modal-close" type="button">
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="service-title title-modal">Товар добавлен в корзину</h2>
+    <div class="buttons-back">
+      <a href="#" class="red-btn red-btn-back">Оформить заказ</a>
+      <button type="button" class="red-btn white-btn-back">Продолжить покупки</button>
+    </div>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <button class="modal-close" type="button">
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
+    </button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716387423!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570627118558!5m2!1sru!2sru" width="940" height="447"  style="border:0;" allowfullscreen=""></iframe>
+    <div class="image-map-wrapper">
+      <img src="img/full-map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </div>
+  </section>
   <section class="modal modal-back">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <button class="modal-close" type="button">
@@ -366,7 +360,6 @@
           <label for="email">Ваш e-mail:</label>
           <input class="email" id="email" type="email" name="email" placeholder="email@example.com">
         </div>
-
         <div class="feedback-form-group">
           <label for="message">Текст письма:</label>
           <textarea class="message" id="message" name="message" rows="3" placeholder="В свободной форме"></textarea>
@@ -377,28 +370,8 @@
       </div>
     </form>
   </section>
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close" type="button">
-      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
-    </button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716387423!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570627118558!5m2!1sru!2sru" width="940" height="447" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <div class="image-map-wrapper">
-      <img src="img/full-map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </div>
-  </section>
-  <section class="modal category-back">
-    <button class="modal-close" type="button">
-      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg><span class="visually-hidden">Закрыть</span>
-    </button>
-    <h2 class="service-title title-modal">Товар добавлен в корзину</h2>
-    <div class="buttons-back">
-      <a href="#" class="red-btn red-btn-back">Оформить заказ</a>
-      <button type="button" class="red-btn white-btn-back">Продолжить покупки</button>
-    </div>
-  </section>
+  <script src="js/popup.js"></script>
   <script src="js/popupsecond.js"></script>
   <script src="js/popupmap.js"></script>
-  <script src="js/popup.js"></script>
 </body>
 </html>
