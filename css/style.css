@@ -997,8 +997,8 @@ img {
 .product-item {
   position: relative;
 
-  width: 220px;
-  margin-bottom: 21px;
+  width: 218px;
+  margin-bottom: 20px;
   margin-right: 20px;
 
   border: 1px solid #eaeaea;
@@ -1010,6 +1010,7 @@ img {
 
 .product-title {
   display: block;
+  padding-top: 2px;
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -1033,7 +1034,7 @@ img {
 .product-price del{
   display: block;
   margin-bottom: 10px;
-  padding-top: 3px;
+  padding-top: 2px;
   padding-right: 34px;
   padding-left: 34px;
 
@@ -1097,7 +1098,7 @@ img {
   left: 0;
   z-index: 1;
 
-  width: 216px;
+  width: 218px;
   height: 170px;
   padding-top: 45px;
   padding-right: 40px;
@@ -1343,28 +1344,28 @@ img {
 }
 
 .button-service { /*Кнопка переключения в слайдере "Сервисы"*/
-display: block;
-width: 240px;
-margin-bottom: 1px;
-padding-top: 17px;
-padding-left: 23px;
-padding-bottom: 20px;
+  display: block;
+  width: 240px;
+  margin-bottom: 1px;
+  padding-top: 17px;
+  padding-left: 23px;
+  padding-bottom: 20px;
 
-font-family: "Cuprum", Arial, sans-serif;
-font-size: 21px;
-font-weight: bold;
-text-align: left;
-color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
 
-background-color: #32425c;
--webkit-box-shadow:
-inset 0 1px 0 0 #405069,
-0 1px 0 0 #293449;
+  background-color: #32425c;
+  -webkit-box-shadow:
+  inset 0 1px 0 0 #405069,
+  0 1px 0 0 #293449;
         box-shadow:
-inset 0 1px 0 0 #405069,
-0 1px 0 0 #293449;
+  inset 0 1px 0 0 #405069,
+  0 1px 0 0 #293449;
 
-cursor: pointer;
+  cursor: pointer;
 }
 
 .button-service:hover {
@@ -1404,10 +1405,12 @@ cursor: pointer;
 
 .guarantee-item {
   background-image: url("../img/guarantee.png");
+  background-position: right -10px top -5px;
 }
 
 .credit-item {
   background-image: url("../img/loan.png");
+  background-position: right -10px top -5px;
 }
 
 #delivery-desk:checked ~ .service-list .delivery-item {
@@ -1442,7 +1445,7 @@ cursor: pointer;
   font-size: 36px;
 }
 
-.credit-desk .red-btn {
+.credit-item .red-btn {
   width: 195px;
 }
 
