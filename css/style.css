@@ -2017,19 +2017,23 @@ img {
   padding-left: 41px;
 }
 
-.footer-service {
+.footer-service,
+.footer-promo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 720px;
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.footer-service {
+  width: 720px;
   padding-top: 38px;
   padding-bottom: 8px;
   padding-left: 173px;
-
-  list-style: none;
 }
 
 .footer-service a{
@@ -2042,22 +2046,12 @@ img {
   text-decoration: underline;
 }
 
-.footer-service a:active {
-  opacity: 0.5;
-}
-
 .footer-middle p {
   width: 340px;
   padding-left: 3px;
 }
 
 .footer-promo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  margin: 0;
-  padding: 0;
   width: 600px;
   padding-top: 17px;
   padding-left: 76px;
@@ -2075,7 +2069,10 @@ img {
   text-decoration: underline;
 }
 
+.footer-service a:active,
 .footer-promo a:active {
+  text-decoration: none;
+
   opacity: 0.5;
 }
 
